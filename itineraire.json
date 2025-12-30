@@ -1,0 +1,381 @@
+{
+  "pays": "Géorgie",
+  "drapeau": "🇬🇪",
+  "symbole": "⛰️",
+  "titre": "Évasion relaxante au cœur du Caucase Géorgien",
+  "budget_total": "1650 €/pers (estimation)",
+  "duree": "14 jours",
+  "date_debut": "2026-01-15",
+  "date_fin": "2026-01-28",
+  "temps_vol": "8h50 (depuis Saint Maurice, Italie, avec escale)",
+  "escale": "1",
+  "jours": [
+    {
+      "jour": 1,
+      "symbole": "🛬",
+      "titre": "Arrivée en douceur à Tbilissi",
+      "legende": "Après votre vol, installez-vous confortablement dans la capitale géorgienne. Profitez d'une première immersion dans l'ambiance unique de la vieille ville, entre ruelles pavées et balcons sculptés. Une journée pour se reposer et s'acclimater.",
+      "lieu": "Tbilissi",
+      "activites": [
+        "<strong>🛬 Arrivée à l'aéroport de Tbilissi (TBS)</strong>: Transfert vers votre hôtel et installation pour un début de séjour serein.",
+        "<strong>🚶‍♂️ Balade relaxante dans le Vieux Tbilissi</strong>: Découvrez les charmes des rues historiques, des églises anciennes et des maisons colorées."
+      ],
+      "illustration": "jour1.jpg",
+      "encarts": [
+        {
+          "symbole": "ℹ️",
+          "titre": "Conseil d'arrivée",
+          "texte": "Le trajet de l'aéroport au centre-ville prend environ 20-30 minutes. Préférez un taxi officiel ou une application comme Bolt pour plus de facilité."
+        }
+      ]
+    },
+    {
+      "jour": 2,
+      "symbole": "♨️",
+      "titre": "Tbilissi, entre bains et panoramas",
+      "legende": "Plongez dans la tradition des bains de soufre pour une relaxation profonde, puis admirez la ville depuis les hauteurs. Une journée équilibrée entre bien-être et découvertes culturelles, parfaite pour continuer l'exploration de la capitale.",
+      "lieu": "Tbilissi",
+      "activites": [
+        "<strong>♨️ Détente aux bains de soufre d'Abanotubani</strong>: Offrez-vous un moment de pure relaxation dans ces bains historiques, réputés pour leurs vertus thérapeutiques.",
+        "<strong>🚠 Montée à la Forteresse de Narikala</strong>: Empruntez le téléphérique pour atteindre cette forteresse emblématique et profiter d'une vue imprenable sur Tbilissi.",
+        "<strong>🚶‍♀️ Flânerie dans le quartier de Shardeni</strong>: Explorez ce quartier animé, ses cafés et ses galeries, idéal pour une promenade en fin de journée."
+      ],
+      "illustration": "jour2.jpg",
+      "encarts": [
+        {
+          "symbole": "💡",
+          "titre": "Bains de soufre",
+          "texte": "Réservez une salle privée pour plus d'intimité et n'hésitez pas à tester le \"kisa\", un gommage traditionnel pour une expérience complète."
+        }
+      ]
+    },
+    {
+      "jour": 3,
+      "symbole": "⛪",
+      "titre": "Trésors spirituels de Mtskheta",
+      "legende": "Partez à la découverte de Mtskheta, l'ancienne capitale et cœur spirituel de la Géorgie. Ses monastères classés à l'UNESCO offrent une plongée fascinante dans l'histoire et la foi orthodoxe, à seulement quelques kilomètres de Tbilissi.",
+      "lieu": "Mtskheta",
+      "activites": [
+        "<strong>⛪ Visite de la Cathédrale de Svetitskhoveli</strong>: Admirez ce chef-d'œuvre architectural, lieu de sépulture des rois géorgiens et site sacré de l'Église orthodoxe géorgienne.",
+        "<strong>🙏 Exploration du Monastère de Jvari</strong>: Perché sur une colline, ce monastère offre des vues panoramiques spectaculaires sur la confluence des rivières Koura et Aragvi."
+      ],
+      "illustration": "jour3.jpg",
+      "encarts": [
+        {
+          "symbole": "🚗",
+          "titre": "Transport",
+          "texte": "Mtskheta est à environ 30 minutes de Tbilissi. Un taxi ou un \"marshrutka\" (minibus local) sont des options pratiques pour cette excursion d'une demi-journée."
+        }
+      ]
+    },
+    {
+      "jour": 4,
+      "symbole": "🍇",
+      "titre": "Sighnaghi, la ville de l'amour et du vin",
+      "legende": "Direction la région viticole de Kakheti pour une journée dédiée aux paysages vallonnés et aux saveurs locales. Sighnaghi, avec ses remparts et ses vues sur le Caucase, vous charmera à coup sûr par son atmosphère romantique et ses vignobles.",
+      "lieu": "Sighnaghi",
+      "activites": [
+        "<strong>🍷 Dégustation de vins géorgiens</strong>: Visitez un domaine viticole local pour découvrir les méthodes traditionnelles de vinification en \"qvevri\" et savourer des vins uniques.",
+        "<strong>🚶‍♀️ Balade sur les remparts de Sighnaghi</strong>: Profitez d'une promenade paisible le long des fortifications de cette charmante ville, offrant des vues magnifiques sur la vallée d'Alazani.",
+        "<strong>⛪ Visite du Monastère de Bodbe</strong>: Découvrez ce monastère paisible, lieu de repos de Sainte Nino, évangélisatrice de la Géorgie."
+      ],
+      "illustration": "jour4.jpg",
+      "encarts": [
+        {
+          "symbole": "🛏️",
+          "titre": "Nuitée",
+          "texte": "Passez la nuit à Sighnaghi pour profiter pleinement de son atmosphère romantique et de ses couchers de soleil sur les montagnes du Caucase."
+        }
+      ]
+    },
+    {
+      "jour": 5,
+      "symbole": "🏰",
+      "titre": "Trésors de Kakheti et retour à Tbilissi",
+      "legende": "Continuez votre exploration de la région de Kakheti avec ses sites historiques et monastiques. Une journée riche en découvertes avant de retrouver l'effervescence de la capitale, après une immersion complète dans la culture viticole.",
+      "lieu": "Kakheti / Tbilissi",
+      "activites": [
+        "<strong>⛪ Découverte du Monastère d'Alaverdi</strong>: Admirez l'une des plus hautes cathédrales de Géorgie, un site impressionnant au cœur de la région viticole.",
+        "<strong>🏰 Exploration du Complexe architectural de Gremi</strong>: Visitez cette ancienne capitale du royaume de Kakheti, avec son église et son château perchés sur une colline.",
+        "<strong>🚗 Retour à Tbilissi</strong>: Profitez du trajet pour admirer les paysages et vous reposer avant de retrouver votre hôtel dans la capitale."
+      ],
+      "illustration": "jour5.jpg",
+      "encarts": [
+        {
+          "symbole": "🍽️",
+          "titre": "Cuisine locale",
+          "texte": "Ne manquez pas de goûter au \"Churchkhela\", une confiserie traditionnelle géorgienne à base de noix et de jus de raisin, spécialité de la région de Kakheti."
+        }
+      ]
+    },
+    {
+      "jour": 6,
+      "symbole": "💧",
+      "titre": "Borjomi, la ville des eaux minérales",
+      "legende": "Partez vers l'ouest pour Borjomi, une ville thermale réputée pour ses eaux minérales curatives. Une journée dédiée à la nature et au bien-être, loin de l'agitation urbaine, au cœur d'une forêt luxuriante.",
+      "lieu": "Borjomi",
+      "activites": [
+        "<strong>🚆 Trajet vers Borjomi</strong>: Profitez du voyage pittoresque à travers les paysages géorgiens jusqu'à cette station thermale.",
+        "<strong>🌳 Promenade dans le Parc Central de Borjomi</strong>: Dégustez l'eau minérale directement à la source et baladez-vous le long de la rivière Koura.",
+        "<strong>♨️ Bains d'eau chaude naturelle</strong>: Détendez-vous dans les piscines d'eau chaude en plein air, nichées dans la forêt (accessibles via une marche douce)."
+      ],
+      "illustration": "jour6.jpg",
+      "encarts": [
+        {
+          "symbole": "🚶‍♀️",
+          "titre": "Accès aux bains",
+          "texte": "Les bains d'eau chaude sont à environ 30-40 minutes de marche agréable depuis l'entrée du parc. Prévoyez des chaussures confortables et une serviette."
+        }
+      ]
+    },
+    {
+      "jour": 7,
+      "symbole": "⛰️",
+      "titre": "Vardzia et le Château de Rabati",
+      "legende": "Explorez l'impressionnant monastère troglodyte de Vardzia, un site historique unique creusé dans la roche. Sur le chemin du retour, découvrez le fascinant château de Rabati, un mélange d'architectures orientales et occidentales.",
+      "lieu": "Vardzia / Akhaltsikhe",
+      "activites": [
+        "<strong>🪨 Visite du Monastère troglodyte de Vardzia</strong>: Imprégnez-vous de l'histoire de ce complexe monastique creusé dans la roche, un véritable labyrinthe de grottes.",
+        "<strong>🏰 Découverte du Château de Rabati à Akhaltsikhe</strong>: Explorez cette forteresse restaurée, un mélange harmonieux d'influences géorgiennes, ottomanes et européennes."
+      ],
+      "illustration": "jour7.jpg",
+      "encarts": [
+        {
+          "symbole": "💡",
+          "titre": "Conseil de visite",
+          "texte": "À Vardzia, des navettes sont disponibles pour monter au sommet, facilitant l'accès pour une visite plus relaxante et moins fatigante."
+        }
+      ]
+    },
+    {
+      "jour": 8,
+      "symbole": "👑",
+      "titre": "Kutaisi, cité royale et monastique",
+      "legende": "Cap sur Kutaisi, la deuxième ville de Géorgie, riche en histoire et en sites religieux. Une journée pour s'imprégner de l'héritage royal et spirituel de la région, avec ses cathédrales majestueuses.",
+      "lieu": "Kutaisi",
+      "activites": [
+        "<strong>🚗 Trajet vers Kutaisi</strong>: Profitez du paysage changeant en vous dirigeant vers l'ouest de la Géorgie.",
+        "<strong>⛪ Visite de la Cathédrale de Bagrati</strong>: Admirez cette cathédrale majestueuse, symbole de l'unité géorgienne et offrant une vue panoramique sur Kutaisi.",
+        "<strong>🙏 Exploration du Monastère de Gelati</strong>: Découvrez ce complexe monastique classé à l'UNESCO, un ancien centre culturel et éducatif de la Géorgie."
+      ],
+      "illustration": "jour8.jpg",
+      "encarts": [
+        {
+          "symbole": "🍽️",
+          "titre": "Spécialité locale",
+          "texte": "À Kutaisi, goûtez au \"Khachapuri Imeruli\", une version locale du célèbre pain au fromage géorgien, souvent plus fine et ronde."
+        }
+      ]
+    },
+    {
+      "jour": 9,
+      "symbole": "🏞️",
+      "titre": "Merveilles naturelles de la Géorgie",
+      "legende": "Plongez dans les profondeurs de la terre à la Grotte de Prométhée et remontez le temps au Parc Naturel de Sataplia. Une journée entre spéléologie douce et traces de dinosaures, pour une immersion dans la nature géorgienne.",
+      "lieu": "Kutaisi",
+      "activites": [
+        "<strong>✨ Exploration de la Grotte de Prométhée</strong>: Laissez-vous émerveiller par les stalactites et stalagmites de cette immense grotte, avec une option de balade en bateau sur une rivière souterraine.",
+        "<strong>🦖 Visite de la Réserve Naturelle de Sataplia</strong>: Découvrez des empreintes de dinosaures et profitez d'une vue panoramique depuis la plateforme en verre suspendue."
+      ],
+      "illustration": "jour9.jpg",
+      "encarts": [
+        {
+          "symbole": "🌡️",
+          "titre": "Température des grottes",
+          "texte": "La température dans la Grotte de Prométhée est constante et fraîche (environ 14°C). Prévoyez une petite veste, même en été."
+        }
+      ]
+    },
+    {
+      "jour": 10,
+      "symbole": "🗿",
+      "titre": "Uplistsikhe, la cité troglodyte",
+      "legende": "Remontez le temps en explorant l'ancienne cité troglodyte d'Uplistsikhe, un site archéologique fascinant. Une immersion dans l'histoire avant de retrouver l'animation de Tbilissi pour la fin de votre séjour.",
+      "lieu": "Uplistsikhe / Tbilissi",
+      "activites": [
+        "<strong>🪨 Découverte de la Cité troglodyte d'Uplistsikhe</strong>: Promenez-vous dans cette ville antique creusée dans la roche, avec ses rues, ses théâtres et ses temples.",
+        "<strong>🚗 Retour à Tbilissi</strong>: Après cette journée riche en histoire, retournez à Tbilissi pour vous reposer et profiter de la soirée dans la capitale."
+      ],
+      "illustration": "jour10.jpg",
+      "encarts": [
+        {
+          "symbole": "👟",
+          "titre": "Chaussures confortables",
+          "texte": "Le terrain d'Uplistsikhe peut être irrégulier et glissant par endroits. Des chaussures de marche confortables sont fortement recommandées pour explorer le site."
+        }
+      ]
+    },
+    {
+      "jour": 11,
+      "symbole": "🏔️",
+      "titre": "Panoramas du Caucase et forteresse d'Ananuri",
+      "legende": "Empruntez la célèbre Route Militaire Géorgienne pour une journée de paysages grandioses. Entre forteresses historiques et vues sur les montagnes enneigées, l'émerveillement est garanti, sans effort excessif.",
+      "lieu": "Ananuri / Gudauri",
+      "activites": [
+        "<strong>🏰 Visite du Complexe fortifié d'Ananuri</strong>: Explorez cette forteresse médiévale superbement conservée, située au bord du réservoir de Zhinvali.",
+        "<strong>🏞️ Admiration des paysages de Gudauri</strong>: Profitez des vues spectaculaires sur les montagnes du Caucase depuis le Monument de l'Amitié Géorgio-Russe, près de la station de ski de Gudauri.",
+        "<strong>🚗 Retour à Tbilissi</strong>: Après cette bouffée d'air frais montagnard, retournez à Tbilissi pour une soirée tranquille."
+      ],
+      "illustration": "jour11.jpg",
+      "encarts": [
+        {
+          "symbole": "🧣",
+          "titre": "Vêtements chauds",
+          "texte": "En janvier, les températures en montagne peuvent être très froides. Prévoyez des couches chaudes, un bonnet et des gants pour profiter pleinement des paysages."
+        }
+      ]
+    },
+    {
+      "jour": 12,
+      "symbole": "🌸",
+      "titre": "Nature et saveurs de Tbilissi",
+      "legende": "Une journée pour se reconnecter à la nature au cœur de la ville et s'initier aux secrets de la cuisine géorgienne. Un mélange parfait de détente et d'immersion culturelle, idéal pour une journée relaxante.",
+      "lieu": "Tbilissi",
+      "activites": [
+        "<strong>🌳 Promenade au Jardin Botanique National de Géorgie</strong>: Échappez à l'agitation urbaine dans ce havre de paix, avec ses cascades et sa diversité florale.",
+        "<strong>🧑‍🍳 Cours de cuisine géorgienne</strong>: Apprenez à préparer des plats emblématiques comme le Khinkali ou le Khachapuri, et dégustez vos créations dans une ambiance conviviale."
+      ],
+      "illustration": "jour12.jpg",
+      "encarts": [
+        {
+          "symbole": "🍽️",
+          "titre": "Expérience culinaire",
+          "texte": "De nombreux ateliers proposent des cours de cuisine. C'est une excellente façon de ramener un peu de Géorgie chez vous et de partager ses saveurs."
+        }
+      ]
+    },
+    {
+      "jour": 13,
+      "symbole": "🛍️",
+      "titre": "Tbilissi, entre marchés et découvertes libres",
+      "legende": "Profitez d'une journée libre pour explorer Tbilissi à votre rythme. Flânez dans les marchés, dénichez des souvenirs uniques ou détendez-vous dans un café local, pour une dernière immersion dans l'ambiance géorgienne.",
+      "lieu": "Tbilissi",
+      "activites": [
+        "<strong>🛍️ Chasse aux trésors au Marché du Pont Sec</strong>: Découvrez ce marché aux puces en plein air, idéal pour trouver des antiquités, des œuvres d'art et des souvenirs uniques.",
+        "<strong>☕ Pause café et observation</strong>: Installez-vous dans un café du quartier de Sololaki ou de Rustaveli pour savourer l'ambiance de la ville et observer la vie locale.",
+        "<strong>🚶‍♀️ Exploration des quartiers modernes</strong>: Découvrez l'architecture contemporaine de Tbilissi, comme le Pont de la Paix ou le Parc Rike, pour un contraste saisissant."
+      ],
+      "illustration": "jour13.jpg",
+      "encarts": [
+        {
+          "symbole": " bargaining",
+          "titre": "Marchandage",
+          "texte": "Au Marché du Pont Sec, le marchandage est courant et fait partie de l'expérience. N'hésitez pas à négocier les prix pour obtenir de bonnes affaires."
+        }
+      ]
+    },
+    {
+      "jour": 14,
+      "symbole": "👋",
+      "titre": "Derniers instants géorgiens et départ",
+      "legende": "Profitez de vos dernières heures à Tbilissi pour quelques achats de dernière minute ou une ultime dégustation. Il est temps de dire au revoir à ce pays fascinant, la tête pleine de souvenirs et le cœur léger.",
+      "lieu": "Tbilissi",
+      "activites": [
+        "<strong>🎁 Achats de souvenirs de dernière minute</strong>: Profitez des boutiques du centre-ville pour trouver les derniers cadeaux ou spécialités locales à emporter.",
+        "<strong>🍽️ Dernier repas géorgien</strong>: Savourez un dernier festin avec les plats que vous avez préférés durant votre séjour, pour un adieu gourmand.",
+        "<strong>✈️ Transfert à l'aéroport de Tbilissi (TBS) et départ</strong>: Il est temps de prendre votre vol retour, des étoiles plein les yeux et des souvenirs inoubliables."
+      ],
+      "illustration": "jour14.jpg",
+      "encarts": [
+        {
+          "symbole": "⏰",
+          "titre": "Heure de départ",
+          "texte": "Prévoyez suffisamment de temps pour le transfert à l'aéroport et les formalités d'embarquement, surtout si votre vol est tôt le matin ou en période de forte affluence."
+        }
+      ]
+    }
+  ],
+  "detail_budget": [
+    {
+      "titre": "Budget vol:",
+      "legende": "A partir de 229 €/pers",
+      "symbole": "🛬"
+    },
+    {
+      "titre": "Budget transports:",
+      "legende": "Environ 350 €/pers (location de voiture partagée ou mix transports locaux/taxis)",
+      "symbole": "🚆"
+    },
+    {
+      "titre": "Budget repas:",
+      "legende": "Environ 490 €/pers (35 €/jour pour des repas variés en restaurants de gamme moyenne)",
+      "symbole": "🥗"
+    },
+    {
+      "titre": "Budget logement:",
+      "legende": "Environ 390 €/pers (13 nuits en hôtel 3* à 60 €/chambre double)",
+      "symbole": "🛏️"
+    },
+    {
+      "titre": "Budget activités:",
+      "legende": "Environ 180 €/pers (entrées sites, bains de soufre, dégustations de vin, cours de cuisine)",
+      "symbole": "🎭"
+    }
+  ],
+  "periodes_ideales": [
+    {
+      "titre": "Printemps (Avril-Mai)",
+      "symbole": "🌸"
+    },
+    {
+      "titre": "Automne (Septembre-Octobre)",
+      "symbole": "🍂"
+    },
+    {
+      "titre": "Hiver (Décembre-Février)",
+      "symbole": "❄️"
+    }
+  ],
+  "infos_pratiques": [
+    {
+      "titre": "En janvier, les températures varient de -5°C à 8°C. Prévoyez des vêtements très chauds, imperméables et des chaussures adaptées à la neige/pluie, surtout en montagne.",
+      "symbole": "❄️"
+    },
+    {
+      "titre": "La monnaie est le Lari Géorgien (GEL). Les cartes de crédit sont acceptées dans les grandes villes, mais prévoyez du liquide pour les petites échoppes et les zones rurales.",
+      "symbole": "💳"
+    },
+    {
+      "titre": "Les citoyens de l'UE n'ont pas besoin de visa pour un séjour de moins d'un an. Un passeport valide est suffisant pour entrer sur le territoire géorgien.",
+      "symbole": "🛂"
+    },
+    {
+      "titre": "Le géorgien est la langue officielle. Le russe est parlé par les générations plus âgées, et l'anglais est de plus en plus courant dans les zones touristiques et par la jeunesse.",
+      "symbole": "🗣️"
+    },
+    {
+      "titre": "Une carte SIM locale (Magti, Geocell) ou une eSIM est recommandée pour rester connecté. Le Wi-Fi est disponible dans la plupart des hébergements et restaurants.",
+      "symbole": "📶"
+    },
+    {
+      "titre": "La conduite se fait à droite. Un permis de conduire international n'est pas toujours exigé mais recommandé. Les routes peuvent être difficiles en hiver, surtout en montagne, avec des risques de neige et de verglas.",
+      "symbole": "🚗"
+    }
+  ],
+  "liens_utiles": [
+    {
+      "legende": "Vols",
+      "titre": "Réserve ton vol",
+      "url": "https://www.kayak.fr/flights/TRN-TBS/2026-01-15/2026-01-29",
+      "symbole": "🛬"
+    },
+    {
+      "legende": "Infos officielles et inspirations",
+      "titre": "Tourisme Géorgie",
+      "url": "https://georgia.travel/",
+      "symbole": "📘"
+    },
+    {
+      "legende": "Météo",
+      "titre": "Météo Géorgie",
+      "url": "https://www.accuweather.com/fr/ge/georgia-weather",
+      "symbole": "🌤️"
+    },
+    {
+      "legende": "Transports locaux",
+      "titre": "Georgian Railway",
+      "url": "https://www.railway.ge/en/",
+      "symbole": "🚆"
+    }
+  ]
+}
