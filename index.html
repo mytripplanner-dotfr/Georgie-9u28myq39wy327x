@@ -1,0 +1,622 @@
+
+<!DOCTYPE html>
+<html lang="fr" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Évasion relaxante au cœur du Caucase Géorgien </title>
+    <link rel="icon" type="image/png" href="favicon.png" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <script>
+      tailwind.config = {
+          theme: {
+              extend: {
+                  colors: {
+                      template: {
+                          sable: '#FFEDD5', 
+                          ocre: '#F97316',   // Orange Vibrant (Brand Accent)
+                          roche: '#0F172A',  // Bleu Nuit (Brand Dark)
+                          ciel: '#0D9488',   // Vert Lagon (Brand Primary)
+                          bg: '#FFF7ED'      // C'est un blanc cassé chaud, parfait pour la lecture et le contraste.
+                      }
+                  },
+                  fontFamily: {
+                      sans: ['"Plus Jakarta Sans"', 'sans-serif'], // Nouvelle police corps
+                      serif: ['"Outfit"', 'sans-serif'],           // Nouvelle police titres
+                  }
+              }
+          }
+      }
+    </script>
+    <style>
+        body { overflow-x: hidden; }
+        
+        /* 2. FORÇAGE DES GRAISSES (Comme sur la Landing Page) */
+        .font-sans { font-weight: 600 !important; }
+        .font-serif { font-weight: 800 !important; }
+
+        /* Ligne verticale de la timeline */
+        .timeline-line {
+            position: absolute;
+            left: 24px;
+            top: 0;
+            bottom: 0;
+            width: 2px;
+            background-color: #E5E7EB;
+            z-index: 0;
+        }
+
+        @media (min-width: 768px) {
+            .timeline-line { left: 50%; margin-left: -1px; }
+        }
+
+        /* Style des cartes Info */
+        .tip-card {
+            border-left: 4px solid #F97316; /* ocre */
+            background-color: #FFF7ED;
+        }
+
+        /* Masquer la scrollbar de la nav mobile tout en gardant le scroll */
+        .hide-scroll::-webkit-scrollbar { display: none; }
+        .hide-scroll { -ms-overflow-style: none; scrollbar-width: none; }
+    </style>
+</head>
+<body class="bg-template-bg text-template-roche antialiased">
+    
+    <nav id="nav-desktop" class="hidden md:flex fixed top-0 w-full z-50 bg-white/90 backdrop-blur border-b border-gray-200 py-4 px-8 justify-between items-center shadow-sm transition-transform duration-300 -translate-y-full">
+        <a href="#top" class="text-xl font-serif font-bold tracking-widest text-template-roche">MyTrip<span class="text-template-ocre">Planner</span></a>
+        <div class="space-x-6 text-sm font-bold text-gray-600">
+            <a href="#jour-1" class="nav-item-desktop hover:text-template-ocre transition">Le Parcours</a>
+            <a href="#pratique" class="nav-item-desktop hover:text-template-ocre transition">Infos Pratiques</a>
+        </div>
+    </nav>
+
+    <nav id="nav-mobile" class="md:hidden fixed top-0 w-full z-50 bg-white/95 backdrop-blur border-b border-gray-200 py-3 pl-4 overflow-x-auto hide-scroll whitespace-nowrap shadow-md transition-transform duration-300 -translate-y-full">
+        <div class="flex space-x-2 pr-4" id="mobile-menu-container">
+            <a href="#top" class="inline-block px-3 py-1 bg-template-roche text-white rounded-full text-xs font-bold shadow-sm">Top</a>
+            
+                <a href="#jour-1" class="mobile-link inline-block px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-xs font-bold hover:bg-template-sable transition-all duration-300">J1 Arrivée en douceur à Tbilissi</a>
+            
+                <a href="#jour-2" class="mobile-link inline-block px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-xs font-bold hover:bg-template-sable transition-all duration-300">J2 Tbilissi, entre bains et panoramas</a>
+            
+                <a href="#jour-3" class="mobile-link inline-block px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-xs font-bold hover:bg-template-sable transition-all duration-300">J3 Trésors spirituels de Mtskheta</a>
+            
+                <a href="#jour-4" class="mobile-link inline-block px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-xs font-bold hover:bg-template-sable transition-all duration-300">J4 Sighnaghi, la ville de l'amour et du vin</a>
+            
+                <a href="#jour-5" class="mobile-link inline-block px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-xs font-bold hover:bg-template-sable transition-all duration-300">J5 Trésors de Kakheti et retour à Tbilissi</a>
+            
+                <a href="#jour-6" class="mobile-link inline-block px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-xs font-bold hover:bg-template-sable transition-all duration-300">J6 Borjomi, la ville des eaux minérales</a>
+            
+                <a href="#jour-7" class="mobile-link inline-block px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-xs font-bold hover:bg-template-sable transition-all duration-300">J7 Vardzia et le Château de Rabati</a>
+            
+                <a href="#jour-8" class="mobile-link inline-block px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-xs font-bold hover:bg-template-sable transition-all duration-300">J8 Kutaisi, cité royale et monastique</a>
+            
+                <a href="#jour-9" class="mobile-link inline-block px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-xs font-bold hover:bg-template-sable transition-all duration-300">J9 Merveilles naturelles de la Géorgie</a>
+            
+                <a href="#jour-10" class="mobile-link inline-block px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-xs font-bold hover:bg-template-sable transition-all duration-300">J10 Uplistsikhe, la cité troglodyte</a>
+            
+                <a href="#jour-11" class="mobile-link inline-block px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-xs font-bold hover:bg-template-sable transition-all duration-300">J11 Panoramas du Caucase et forteresse d'Ananuri</a>
+            
+                <a href="#jour-12" class="mobile-link inline-block px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-xs font-bold hover:bg-template-sable transition-all duration-300">J12 Nature et saveurs de Tbilissi</a>
+            
+                <a href="#jour-13" class="mobile-link inline-block px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-xs font-bold hover:bg-template-sable transition-all duration-300">J13 Tbilissi, entre marchés et découvertes libres</a>
+            
+                <a href="#jour-14" class="mobile-link inline-block px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-xs font-bold hover:bg-template-sable transition-all duration-300">J14 Derniers instants géorgiens et départ</a>
+            
+            <a href="#pratique" class="mobile-link inline-block px-3 py-1 border border-gray-300 text-gray-500 rounded-full text-xs font-bold">Infos</a>
+        </div>
+    </nav>
+
+    <header id="top" class="relative h-[60vh] flex items-center justify-center bg-cover bg-center"
+            style="background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.7)), url('https://raw.githubusercontent.com/mytripplanner-dotfr/Georgie-9u28myq39wy327x/main/header.png" || 'https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?q=80&w=2021'}');">
+        
+        <div class="relative z-20 text-center text-white px-4 max-w-3xl animate-fade-in-up">
+            <p class="font-sans text-template-sable tracking-[0.2em] mb-4 uppercase text-xs font-bold">Feuille de Route</p>
+            <h1 class="font-serif text-5xl md:text-8xl mb-6 leading-tight drop-shadow-lg">GEORGIE</h1>
+            <p class="font-sans text-lg md:text-xl text-gray-100 mb-10 font-medium max-w-2xl mx-auto leading-relaxed">Évasion relaxante au cœur du Caucase Géorgien</p>
+            
+            <div class="flex flex-wrap justify-center gap-4 text-sm font-bold mb-10">
+                <span class="bg-white/20 backdrop-blur-md px-5 py-2 rounded-full border border-white/30 shadow-sm">🗓️ Du 15 au 28 Janvier 2026</span>
+                <span class="bg-white/20 backdrop-blur-md px-5 py-2 rounded-full border border-white/30 shadow-sm">💰 1650 €/pers (estimation)</span>
+                <span class="bg-white/20 backdrop-blur-md px-5 py-2 rounded-full border border-white/30 shadow-sm">🛬 8h50 (depuis Saint Maurice, Italie, avec escale)</span>
+            </div>
+        </div>
+    </header>
+
+    <section id="itineraire" class="max-w-6xl mx-auto px-4 py-16 relative">
+      <div class="text-center mb-16">
+            <h2 class="text-template-ocre font-bold tracking-normal text-4xl mt-2 uppercase font-serif">Votre Roadtrip</h2>
+      </div>
+
+        <div class="relative">
+            <div class="timeline-line"></div>
+            
+                <div id="jour-1" class="section-etape relative z-10 mb-20 md:flex md:flex-row-reverse md:justify-between items-start group scroll-mt-32">
+                    <div class="absolute left-6 md:left-1/2 transform -translate-x-1/2 w-8 h-8 bg-template-roche rounded-full border-4 border-white shadow-lg flex items-center justify-center z-20"></div>
+                    
+                    <div class="md:w-[45%] pl-14 md:text-left md:pl-12">
+                        <span class="font-serif text-3xl block text-template-roche mb-2 font-bold">Jour 1</span>
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">Arrivée en douceur à Tbilissi</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed italic mb-4">Après votre vol, installez-vous confortablement dans la capitale géorgienne. Profitez d'une première immersion dans l'ambiance unique de la vieille ville, entre ruelles pavées et balcons sculptés. Une journée pour se reposer et s'acclimater.</p>
+                        <ul class="text-sm text-gray-700 space-y-2 inline-block text-left font-medium">
+                            <li><strong>🛬 Arrivée à l'aéroport de Tbilissi (TBS)</strong>: Transfert vers votre hôtel et installation pour un début de séjour serein.</li><li><strong>🚶‍♂️ Balade relaxante dans le Vieux Tbilissi</strong>: Découvrez les charmes des rues historiques, des églises anciennes et des maisons colorées.</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="pl-14 md:w-[45%] mt-6 md:mt-0 md:pr-12">
+                        <div class="rounded-xl overflow-hidden shadow-lg mb-4">
+                            <img src="https://raw.githubusercontent.com/mytripplanner-dotfr/Georgie-9u28myq39wy327x/main/jour1.jpg" class="w-full h-64 object-cover" alt="Jour 1">
+                        </div>
+                        
+                            <div class="tip-card p-4 rounded-r-lg text-sm mb-2">
+                                <p class="font-bold text-template-ocre mb-1">ℹ️ Conseil d'arrivée</p>
+                                <p class="text-gray-700">Le trajet de l'aéroport au centre-ville prend environ 20-30 minutes. Préférez un taxi officiel ou une application comme Bolt pour plus de facilité.</p>
+                            </div>
+                        
+                    </div>
+                </div>
+                
+                <div id="jour-2" class="section-etape relative z-10 mb-20 md:flex  md:justify-between items-start group scroll-mt-32">
+                    <div class="absolute left-6 md:left-1/2 transform -translate-x-1/2 w-8 h-8 bg-template-ocre rounded-full border-4 border-white shadow-lg flex items-center justify-center z-20"></div>
+                    
+                    <div class="md:w-[45%] pl-14 md:text-right md:pr-12">
+                        <span class="font-serif text-3xl block text-template-roche mb-2 font-bold">Jour 2</span>
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">Tbilissi, entre bains et panoramas</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed italic mb-4">Plongez dans la tradition des bains de soufre pour une relaxation profonde, puis admirez la ville depuis les hauteurs. Une journée équilibrée entre bien-être et découvertes culturelles, parfaite pour continuer l'exploration de la capitale.</p>
+                        <ul class="text-sm text-gray-700 space-y-2 inline-block text-left font-medium">
+                            <li><strong>♨️ Détente aux bains de soufre d'Abanotubani</strong>: Offrez-vous un moment de pure relaxation dans ces bains historiques, réputés pour leurs vertus thérapeutiques.</li><li><strong>🚠 Montée à la Forteresse de Narikala</strong>: Empruntez le téléphérique pour atteindre cette forteresse emblématique et profiter d'une vue imprenable sur Tbilissi.</li><li><strong>🚶‍♀️ Flânerie dans le quartier de Shardeni</strong>: Explorez ce quartier animé, ses cafés et ses galeries, idéal pour une promenade en fin de journée.</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="pl-14 md:w-[45%] mt-6 md:mt-0 md:pl-12">
+                        <div class="rounded-xl overflow-hidden shadow-lg mb-4">
+                            <img src="https://raw.githubusercontent.com/mytripplanner-dotfr/Georgie-9u28myq39wy327x/main/jour2.jpg" class="w-full h-64 object-cover" alt="Jour 2">
+                        </div>
+                        
+                            <div class="tip-card p-4 rounded-r-lg text-sm mb-2">
+                                <p class="font-bold text-template-ocre mb-1">💡 Bains de soufre</p>
+                                <p class="text-gray-700">Réservez une salle privée pour plus d'intimité et n'hésitez pas à tester le "kisa", un gommage traditionnel pour une expérience complète.</p>
+                            </div>
+                        
+                    </div>
+                </div>
+                
+                <div id="jour-3" class="section-etape relative z-10 mb-20 md:flex md:flex-row-reverse md:justify-between items-start group scroll-mt-32">
+                    <div class="absolute left-6 md:left-1/2 transform -translate-x-1/2 w-8 h-8 bg-template-ciel rounded-full border-4 border-white shadow-lg flex items-center justify-center z-20"></div>
+                    
+                    <div class="md:w-[45%] pl-14 md:text-left md:pl-12">
+                        <span class="font-serif text-3xl block text-template-roche mb-2 font-bold">Jour 3</span>
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">Trésors spirituels de Mtskheta</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed italic mb-4">Partez à la découverte de Mtskheta, l'ancienne capitale et cœur spirituel de la Géorgie. Ses monastères classés à l'UNESCO offrent une plongée fascinante dans l'histoire et la foi orthodoxe, à seulement quelques kilomètres de Tbilissi.</p>
+                        <ul class="text-sm text-gray-700 space-y-2 inline-block text-left font-medium">
+                            <li><strong>⛪ Visite de la Cathédrale de Svetitskhoveli</strong>: Admirez ce chef-d'œuvre architectural, lieu de sépulture des rois géorgiens et site sacré de l'Église orthodoxe géorgienne.</li><li><strong>🙏 Exploration du Monastère de Jvari</strong>: Perché sur une colline, ce monastère offre des vues panoramiques spectaculaires sur la confluence des rivières Koura et Aragvi.</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="pl-14 md:w-[45%] mt-6 md:mt-0 md:pr-12">
+                        <div class="rounded-xl overflow-hidden shadow-lg mb-4">
+                            <img src="https://raw.githubusercontent.com/mytripplanner-dotfr/Georgie-9u28myq39wy327x/main/jour3.jpg" class="w-full h-64 object-cover" alt="Jour 3">
+                        </div>
+                        
+                            <div class="tip-card p-4 rounded-r-lg text-sm mb-2">
+                                <p class="font-bold text-template-ocre mb-1">🚗 Transport</p>
+                                <p class="text-gray-700">Mtskheta est à environ 30 minutes de Tbilissi. Un taxi ou un "marshrutka" (minibus local) sont des options pratiques pour cette excursion d'une demi-journée.</p>
+                            </div>
+                        
+                    </div>
+                </div>
+                
+                <div id="jour-4" class="section-etape relative z-10 mb-20 md:flex  md:justify-between items-start group scroll-mt-32">
+                    <div class="absolute left-6 md:left-1/2 transform -translate-x-1/2 w-8 h-8 bg-template-roche rounded-full border-4 border-white shadow-lg flex items-center justify-center z-20"></div>
+                    
+                    <div class="md:w-[45%] pl-14 md:text-right md:pr-12">
+                        <span class="font-serif text-3xl block text-template-roche mb-2 font-bold">Jour 4</span>
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">Sighnaghi, la ville de l'amour et du vin</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed italic mb-4">Direction la région viticole de Kakheti pour une journée dédiée aux paysages vallonnés et aux saveurs locales. Sighnaghi, avec ses remparts et ses vues sur le Caucase, vous charmera à coup sûr par son atmosphère romantique et ses vignobles.</p>
+                        <ul class="text-sm text-gray-700 space-y-2 inline-block text-left font-medium">
+                            <li><strong>🍷 Dégustation de vins géorgiens</strong>: Visitez un domaine viticole local pour découvrir les méthodes traditionnelles de vinification en "qvevri" et savourer des vins uniques.</li><li><strong>🚶‍♀️ Balade sur les remparts de Sighnaghi</strong>: Profitez d'une promenade paisible le long des fortifications de cette charmante ville, offrant des vues magnifiques sur la vallée d'Alazani.</li><li><strong>⛪ Visite du Monastère de Bodbe</strong>: Découvrez ce monastère paisible, lieu de repos de Sainte Nino, évangélisatrice de la Géorgie.</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="pl-14 md:w-[45%] mt-6 md:mt-0 md:pl-12">
+                        <div class="rounded-xl overflow-hidden shadow-lg mb-4">
+                            <img src="https://raw.githubusercontent.com/mytripplanner-dotfr/Georgie-9u28myq39wy327x/main/jour4.jpg" class="w-full h-64 object-cover" alt="Jour 4">
+                        </div>
+                        
+                            <div class="tip-card p-4 rounded-r-lg text-sm mb-2">
+                                <p class="font-bold text-template-ocre mb-1">🛏️ Nuitée</p>
+                                <p class="text-gray-700">Passez la nuit à Sighnaghi pour profiter pleinement de son atmosphère romantique et de ses couchers de soleil sur les montagnes du Caucase.</p>
+                            </div>
+                        
+                    </div>
+                </div>
+                
+                <div id="jour-5" class="section-etape relative z-10 mb-20 md:flex md:flex-row-reverse md:justify-between items-start group scroll-mt-32">
+                    <div class="absolute left-6 md:left-1/2 transform -translate-x-1/2 w-8 h-8 bg-template-ocre rounded-full border-4 border-white shadow-lg flex items-center justify-center z-20"></div>
+                    
+                    <div class="md:w-[45%] pl-14 md:text-left md:pl-12">
+                        <span class="font-serif text-3xl block text-template-roche mb-2 font-bold">Jour 5</span>
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">Trésors de Kakheti et retour à Tbilissi</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed italic mb-4">Continuez votre exploration de la région de Kakheti avec ses sites historiques et monastiques. Une journée riche en découvertes avant de retrouver l'effervescence de la capitale, après une immersion complète dans la culture viticole.</p>
+                        <ul class="text-sm text-gray-700 space-y-2 inline-block text-left font-medium">
+                            <li><strong>⛪ Découverte du Monastère d'Alaverdi</strong>: Admirez l'une des plus hautes cathédrales de Géorgie, un site impressionnant au cœur de la région viticole.</li><li><strong>🏰 Exploration du Complexe architectural de Gremi</strong>: Visitez cette ancienne capitale du royaume de Kakheti, avec son église et son château perchés sur une colline.</li><li><strong>🚗 Retour à Tbilissi</strong>: Profitez du trajet pour admirer les paysages et vous reposer avant de retrouver votre hôtel dans la capitale.</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="pl-14 md:w-[45%] mt-6 md:mt-0 md:pr-12">
+                        <div class="rounded-xl overflow-hidden shadow-lg mb-4">
+                            <img src="https://raw.githubusercontent.com/mytripplanner-dotfr/Georgie-9u28myq39wy327x/main/jour5.jpg" class="w-full h-64 object-cover" alt="Jour 5">
+                        </div>
+                        
+                            <div class="tip-card p-4 rounded-r-lg text-sm mb-2">
+                                <p class="font-bold text-template-ocre mb-1">🍽️ Cuisine locale</p>
+                                <p class="text-gray-700">Ne manquez pas de goûter au "Churchkhela", une confiserie traditionnelle géorgienne à base de noix et de jus de raisin, spécialité de la région de Kakheti.</p>
+                            </div>
+                        
+                    </div>
+                </div>
+                
+                <div id="jour-6" class="section-etape relative z-10 mb-20 md:flex  md:justify-between items-start group scroll-mt-32">
+                    <div class="absolute left-6 md:left-1/2 transform -translate-x-1/2 w-8 h-8 bg-template-ciel rounded-full border-4 border-white shadow-lg flex items-center justify-center z-20"></div>
+                    
+                    <div class="md:w-[45%] pl-14 md:text-right md:pr-12">
+                        <span class="font-serif text-3xl block text-template-roche mb-2 font-bold">Jour 6</span>
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">Borjomi, la ville des eaux minérales</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed italic mb-4">Partez vers l'ouest pour Borjomi, une ville thermale réputée pour ses eaux minérales curatives. Une journée dédiée à la nature et au bien-être, loin de l'agitation urbaine, au cœur d'une forêt luxuriante.</p>
+                        <ul class="text-sm text-gray-700 space-y-2 inline-block text-left font-medium">
+                            <li><strong>🚆 Trajet vers Borjomi</strong>: Profitez du voyage pittoresque à travers les paysages géorgiens jusqu'à cette station thermale.</li><li><strong>🌳 Promenade dans le Parc Central de Borjomi</strong>: Dégustez l'eau minérale directement à la source et baladez-vous le long de la rivière Koura.</li><li><strong>♨️ Bains d'eau chaude naturelle</strong>: Détendez-vous dans les piscines d'eau chaude en plein air, nichées dans la forêt (accessibles via une marche douce).</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="pl-14 md:w-[45%] mt-6 md:mt-0 md:pl-12">
+                        <div class="rounded-xl overflow-hidden shadow-lg mb-4">
+                            <img src="https://raw.githubusercontent.com/mytripplanner-dotfr/Georgie-9u28myq39wy327x/main/jour6.jpg" class="w-full h-64 object-cover" alt="Jour 6">
+                        </div>
+                        
+                            <div class="tip-card p-4 rounded-r-lg text-sm mb-2">
+                                <p class="font-bold text-template-ocre mb-1">🚶‍♀️ Accès aux bains</p>
+                                <p class="text-gray-700">Les bains d'eau chaude sont à environ 30-40 minutes de marche agréable depuis l'entrée du parc. Prévoyez des chaussures confortables et une serviette.</p>
+                            </div>
+                        
+                    </div>
+                </div>
+                
+                <div id="jour-7" class="section-etape relative z-10 mb-20 md:flex md:flex-row-reverse md:justify-between items-start group scroll-mt-32">
+                    <div class="absolute left-6 md:left-1/2 transform -translate-x-1/2 w-8 h-8 bg-template-roche rounded-full border-4 border-white shadow-lg flex items-center justify-center z-20"></div>
+                    
+                    <div class="md:w-[45%] pl-14 md:text-left md:pl-12">
+                        <span class="font-serif text-3xl block text-template-roche mb-2 font-bold">Jour 7</span>
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">Vardzia et le Château de Rabati</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed italic mb-4">Explorez l'impressionnant monastère troglodyte de Vardzia, un site historique unique creusé dans la roche. Sur le chemin du retour, découvrez le fascinant château de Rabati, un mélange d'architectures orientales et occidentales.</p>
+                        <ul class="text-sm text-gray-700 space-y-2 inline-block text-left font-medium">
+                            <li><strong>🪨 Visite du Monastère troglodyte de Vardzia</strong>: Imprégnez-vous de l'histoire de ce complexe monastique creusé dans la roche, un véritable labyrinthe de grottes.</li><li><strong>🏰 Découverte du Château de Rabati à Akhaltsikhe</strong>: Explorez cette forteresse restaurée, un mélange harmonieux d'influences géorgiennes, ottomanes et européennes.</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="pl-14 md:w-[45%] mt-6 md:mt-0 md:pr-12">
+                        <div class="rounded-xl overflow-hidden shadow-lg mb-4">
+                            <img src="https://raw.githubusercontent.com/mytripplanner-dotfr/Georgie-9u28myq39wy327x/main/jour7.jpg" class="w-full h-64 object-cover" alt="Jour 7">
+                        </div>
+                        
+                            <div class="tip-card p-4 rounded-r-lg text-sm mb-2">
+                                <p class="font-bold text-template-ocre mb-1">💡 Conseil de visite</p>
+                                <p class="text-gray-700">À Vardzia, des navettes sont disponibles pour monter au sommet, facilitant l'accès pour une visite plus relaxante et moins fatigante.</p>
+                            </div>
+                        
+                    </div>
+                </div>
+                
+                <div id="jour-8" class="section-etape relative z-10 mb-20 md:flex  md:justify-between items-start group scroll-mt-32">
+                    <div class="absolute left-6 md:left-1/2 transform -translate-x-1/2 w-8 h-8 bg-template-ocre rounded-full border-4 border-white shadow-lg flex items-center justify-center z-20"></div>
+                    
+                    <div class="md:w-[45%] pl-14 md:text-right md:pr-12">
+                        <span class="font-serif text-3xl block text-template-roche mb-2 font-bold">Jour 8</span>
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">Kutaisi, cité royale et monastique</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed italic mb-4">Cap sur Kutaisi, la deuxième ville de Géorgie, riche en histoire et en sites religieux. Une journée pour s'imprégner de l'héritage royal et spirituel de la région, avec ses cathédrales majestueuses.</p>
+                        <ul class="text-sm text-gray-700 space-y-2 inline-block text-left font-medium">
+                            <li><strong>🚗 Trajet vers Kutaisi</strong>: Profitez du paysage changeant en vous dirigeant vers l'ouest de la Géorgie.</li><li><strong>⛪ Visite de la Cathédrale de Bagrati</strong>: Admirez cette cathédrale majestueuse, symbole de l'unité géorgienne et offrant une vue panoramique sur Kutaisi.</li><li><strong>🙏 Exploration du Monastère de Gelati</strong>: Découvrez ce complexe monastique classé à l'UNESCO, un ancien centre culturel et éducatif de la Géorgie.</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="pl-14 md:w-[45%] mt-6 md:mt-0 md:pl-12">
+                        <div class="rounded-xl overflow-hidden shadow-lg mb-4">
+                            <img src="https://raw.githubusercontent.com/mytripplanner-dotfr/Georgie-9u28myq39wy327x/main/jour8.jpg" class="w-full h-64 object-cover" alt="Jour 8">
+                        </div>
+                        
+                            <div class="tip-card p-4 rounded-r-lg text-sm mb-2">
+                                <p class="font-bold text-template-ocre mb-1">🍽️ Spécialité locale</p>
+                                <p class="text-gray-700">À Kutaisi, goûtez au "Khachapuri Imeruli", une version locale du célèbre pain au fromage géorgien, souvent plus fine et ronde.</p>
+                            </div>
+                        
+                    </div>
+                </div>
+                
+                <div id="jour-9" class="section-etape relative z-10 mb-20 md:flex md:flex-row-reverse md:justify-between items-start group scroll-mt-32">
+                    <div class="absolute left-6 md:left-1/2 transform -translate-x-1/2 w-8 h-8 bg-template-ciel rounded-full border-4 border-white shadow-lg flex items-center justify-center z-20"></div>
+                    
+                    <div class="md:w-[45%] pl-14 md:text-left md:pl-12">
+                        <span class="font-serif text-3xl block text-template-roche mb-2 font-bold">Jour 9</span>
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">Merveilles naturelles de la Géorgie</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed italic mb-4">Plongez dans les profondeurs de la terre à la Grotte de Prométhée et remontez le temps au Parc Naturel de Sataplia. Une journée entre spéléologie douce et traces de dinosaures, pour une immersion dans la nature géorgienne.</p>
+                        <ul class="text-sm text-gray-700 space-y-2 inline-block text-left font-medium">
+                            <li><strong>✨ Exploration de la Grotte de Prométhée</strong>: Laissez-vous émerveiller par les stalactites et stalagmites de cette immense grotte, avec une option de balade en bateau sur une rivière souterraine.</li><li><strong>🦖 Visite de la Réserve Naturelle de Sataplia</strong>: Découvrez des empreintes de dinosaures et profitez d'une vue panoramique depuis la plateforme en verre suspendue.</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="pl-14 md:w-[45%] mt-6 md:mt-0 md:pr-12">
+                        <div class="rounded-xl overflow-hidden shadow-lg mb-4">
+                            <img src="https://raw.githubusercontent.com/mytripplanner-dotfr/Georgie-9u28myq39wy327x/main/jour9.jpg" class="w-full h-64 object-cover" alt="Jour 9">
+                        </div>
+                        
+                            <div class="tip-card p-4 rounded-r-lg text-sm mb-2">
+                                <p class="font-bold text-template-ocre mb-1">🌡️ Température des grottes</p>
+                                <p class="text-gray-700">La température dans la Grotte de Prométhée est constante et fraîche (environ 14°C). Prévoyez une petite veste, même en été.</p>
+                            </div>
+                        
+                    </div>
+                </div>
+                
+                <div id="jour-10" class="section-etape relative z-10 mb-20 md:flex  md:justify-between items-start group scroll-mt-32">
+                    <div class="absolute left-6 md:left-1/2 transform -translate-x-1/2 w-8 h-8 bg-template-roche rounded-full border-4 border-white shadow-lg flex items-center justify-center z-20"></div>
+                    
+                    <div class="md:w-[45%] pl-14 md:text-right md:pr-12">
+                        <span class="font-serif text-3xl block text-template-roche mb-2 font-bold">Jour 10</span>
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">Uplistsikhe, la cité troglodyte</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed italic mb-4">Remontez le temps en explorant l'ancienne cité troglodyte d'Uplistsikhe, un site archéologique fascinant. Une immersion dans l'histoire avant de retrouver l'animation de Tbilissi pour la fin de votre séjour.</p>
+                        <ul class="text-sm text-gray-700 space-y-2 inline-block text-left font-medium">
+                            <li><strong>🪨 Découverte de la Cité troglodyte d'Uplistsikhe</strong>: Promenez-vous dans cette ville antique creusée dans la roche, avec ses rues, ses théâtres et ses temples.</li><li><strong>🚗 Retour à Tbilissi</strong>: Après cette journée riche en histoire, retournez à Tbilissi pour vous reposer et profiter de la soirée dans la capitale.</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="pl-14 md:w-[45%] mt-6 md:mt-0 md:pl-12">
+                        <div class="rounded-xl overflow-hidden shadow-lg mb-4">
+                            <img src="https://raw.githubusercontent.com/mytripplanner-dotfr/Georgie-9u28myq39wy327x/main/jour10.jpg" class="w-full h-64 object-cover" alt="Jour 10">
+                        </div>
+                        
+                            <div class="tip-card p-4 rounded-r-lg text-sm mb-2">
+                                <p class="font-bold text-template-ocre mb-1">👟 Chaussures confortables</p>
+                                <p class="text-gray-700">Le terrain d'Uplistsikhe peut être irrégulier et glissant par endroits. Des chaussures de marche confortables sont fortement recommandées pour explorer le site.</p>
+                            </div>
+                        
+                    </div>
+                </div>
+                
+                <div id="jour-11" class="section-etape relative z-10 mb-20 md:flex md:flex-row-reverse md:justify-between items-start group scroll-mt-32">
+                    <div class="absolute left-6 md:left-1/2 transform -translate-x-1/2 w-8 h-8 bg-template-ocre rounded-full border-4 border-white shadow-lg flex items-center justify-center z-20"></div>
+                    
+                    <div class="md:w-[45%] pl-14 md:text-left md:pl-12">
+                        <span class="font-serif text-3xl block text-template-roche mb-2 font-bold">Jour 11</span>
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">Panoramas du Caucase et forteresse d'Ananuri</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed italic mb-4">Empruntez la célèbre Route Militaire Géorgienne pour une journée de paysages grandioses. Entre forteresses historiques et vues sur les montagnes enneigées, l'émerveillement est garanti, sans effort excessif.</p>
+                        <ul class="text-sm text-gray-700 space-y-2 inline-block text-left font-medium">
+                            <li><strong>🏰 Visite du Complexe fortifié d'Ananuri</strong>: Explorez cette forteresse médiévale superbement conservée, située au bord du réservoir de Zhinvali.</li><li><strong>🏞️ Admiration des paysages de Gudauri</strong>: Profitez des vues spectaculaires sur les montagnes du Caucase depuis le Monument de l'Amitié Géorgio-Russe, près de la station de ski de Gudauri.</li><li><strong>🚗 Retour à Tbilissi</strong>: Après cette bouffée d'air frais montagnard, retournez à Tbilissi pour une soirée tranquille.</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="pl-14 md:w-[45%] mt-6 md:mt-0 md:pr-12">
+                        <div class="rounded-xl overflow-hidden shadow-lg mb-4">
+                            <img src="https://raw.githubusercontent.com/mytripplanner-dotfr/Georgie-9u28myq39wy327x/main/jour11.jpg" class="w-full h-64 object-cover" alt="Jour 11">
+                        </div>
+                        
+                            <div class="tip-card p-4 rounded-r-lg text-sm mb-2">
+                                <p class="font-bold text-template-ocre mb-1">🧣 Vêtements chauds</p>
+                                <p class="text-gray-700">En janvier, les températures en montagne peuvent être très froides. Prévoyez des couches chaudes, un bonnet et des gants pour profiter pleinement des paysages.</p>
+                            </div>
+                        
+                    </div>
+                </div>
+                
+                <div id="jour-12" class="section-etape relative z-10 mb-20 md:flex  md:justify-between items-start group scroll-mt-32">
+                    <div class="absolute left-6 md:left-1/2 transform -translate-x-1/2 w-8 h-8 bg-template-ciel rounded-full border-4 border-white shadow-lg flex items-center justify-center z-20"></div>
+                    
+                    <div class="md:w-[45%] pl-14 md:text-right md:pr-12">
+                        <span class="font-serif text-3xl block text-template-roche mb-2 font-bold">Jour 12</span>
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">Nature et saveurs de Tbilissi</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed italic mb-4">Une journée pour se reconnecter à la nature au cœur de la ville et s'initier aux secrets de la cuisine géorgienne. Un mélange parfait de détente et d'immersion culturelle, idéal pour une journée relaxante.</p>
+                        <ul class="text-sm text-gray-700 space-y-2 inline-block text-left font-medium">
+                            <li><strong>🌳 Promenade au Jardin Botanique National de Géorgie</strong>: Échappez à l'agitation urbaine dans ce havre de paix, avec ses cascades et sa diversité florale.</li><li><strong>🧑‍🍳 Cours de cuisine géorgienne</strong>: Apprenez à préparer des plats emblématiques comme le Khinkali ou le Khachapuri, et dégustez vos créations dans une ambiance conviviale.</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="pl-14 md:w-[45%] mt-6 md:mt-0 md:pl-12">
+                        <div class="rounded-xl overflow-hidden shadow-lg mb-4">
+                            <img src="https://raw.githubusercontent.com/mytripplanner-dotfr/Georgie-9u28myq39wy327x/main/jour12.jpg" class="w-full h-64 object-cover" alt="Jour 12">
+                        </div>
+                        
+                            <div class="tip-card p-4 rounded-r-lg text-sm mb-2">
+                                <p class="font-bold text-template-ocre mb-1">🍽️ Expérience culinaire</p>
+                                <p class="text-gray-700">De nombreux ateliers proposent des cours de cuisine. C'est une excellente façon de ramener un peu de Géorgie chez vous et de partager ses saveurs.</p>
+                            </div>
+                        
+                    </div>
+                </div>
+                
+                <div id="jour-13" class="section-etape relative z-10 mb-20 md:flex md:flex-row-reverse md:justify-between items-start group scroll-mt-32">
+                    <div class="absolute left-6 md:left-1/2 transform -translate-x-1/2 w-8 h-8 bg-template-roche rounded-full border-4 border-white shadow-lg flex items-center justify-center z-20"></div>
+                    
+                    <div class="md:w-[45%] pl-14 md:text-left md:pl-12">
+                        <span class="font-serif text-3xl block text-template-roche mb-2 font-bold">Jour 13</span>
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">Tbilissi, entre marchés et découvertes libres</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed italic mb-4">Profitez d'une journée libre pour explorer Tbilissi à votre rythme. Flânez dans les marchés, dénichez des souvenirs uniques ou détendez-vous dans un café local, pour une dernière immersion dans l'ambiance géorgienne.</p>
+                        <ul class="text-sm text-gray-700 space-y-2 inline-block text-left font-medium">
+                            <li><strong>🛍️ Chasse aux trésors au Marché du Pont Sec</strong>: Découvrez ce marché aux puces en plein air, idéal pour trouver des antiquités, des œuvres d'art et des souvenirs uniques.</li><li><strong>☕ Pause café et observation</strong>: Installez-vous dans un café du quartier de Sololaki ou de Rustaveli pour savourer l'ambiance de la ville et observer la vie locale.</li><li><strong>🚶‍♀️ Exploration des quartiers modernes</strong>: Découvrez l'architecture contemporaine de Tbilissi, comme le Pont de la Paix ou le Parc Rike, pour un contraste saisissant.</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="pl-14 md:w-[45%] mt-6 md:mt-0 md:pr-12">
+                        <div class="rounded-xl overflow-hidden shadow-lg mb-4">
+                            <img src="https://raw.githubusercontent.com/mytripplanner-dotfr/Georgie-9u28myq39wy327x/main/jour13.jpg" class="w-full h-64 object-cover" alt="Jour 13">
+                        </div>
+                        
+                            <div class="tip-card p-4 rounded-r-lg text-sm mb-2">
+                                <p class="font-bold text-template-ocre mb-1"> bargaining Marchandage</p>
+                                <p class="text-gray-700">Au Marché du Pont Sec, le marchandage est courant et fait partie de l'expérience. N'hésitez pas à négocier les prix pour obtenir de bonnes affaires.</p>
+                            </div>
+                        
+                    </div>
+                </div>
+                
+                <div id="jour-14" class="section-etape relative z-10 mb-20 md:flex  md:justify-between items-start group scroll-mt-32">
+                    <div class="absolute left-6 md:left-1/2 transform -translate-x-1/2 w-8 h-8 bg-template-ocre rounded-full border-4 border-white shadow-lg flex items-center justify-center z-20"></div>
+                    
+                    <div class="md:w-[45%] pl-14 md:text-right md:pr-12">
+                        <span class="font-serif text-3xl block text-template-roche mb-2 font-bold">Jour 14</span>
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">Derniers instants géorgiens et départ</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed italic mb-4">Profitez de vos dernières heures à Tbilissi pour quelques achats de dernière minute ou une ultime dégustation. Il est temps de dire au revoir à ce pays fascinant, la tête pleine de souvenirs et le cœur léger.</p>
+                        <ul class="text-sm text-gray-700 space-y-2 inline-block text-left font-medium">
+                            <li><strong>🎁 Achats de souvenirs de dernière minute</strong>: Profitez des boutiques du centre-ville pour trouver les derniers cadeaux ou spécialités locales à emporter.</li><li><strong>🍽️ Dernier repas géorgien</strong>: Savourez un dernier festin avec les plats que vous avez préférés durant votre séjour, pour un adieu gourmand.</li><li><strong>✈️ Transfert à l'aéroport de Tbilissi (TBS) et départ</strong>: Il est temps de prendre votre vol retour, des étoiles plein les yeux et des souvenirs inoubliables.</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="pl-14 md:w-[45%] mt-6 md:mt-0 md:pl-12">
+                        <div class="rounded-xl overflow-hidden shadow-lg mb-4">
+                            <img src="https://raw.githubusercontent.com/mytripplanner-dotfr/Georgie-9u28myq39wy327x/main/jour14.jpg" class="w-full h-64 object-cover" alt="Jour 14">
+                        </div>
+                        
+                            <div class="tip-card p-4 rounded-r-lg text-sm mb-2">
+                                <p class="font-bold text-template-ocre mb-1">⏰ Heure de départ</p>
+                                <p class="text-gray-700">Prévoyez suffisamment de temps pour le transfert à l'aéroport et les formalités d'embarquement, surtout si votre vol est tôt le matin ou en période de forte affluence.</p>
+                            </div>
+                        
+                    </div>
+                </div>
+                
+            </div>
+    </section>
+
+    <section id="pratique" class="bg-white border-t border-gray-200 pt-12 pb-12 scroll-mt-24">
+        <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-3 gap-10">
+            <div>
+                <h4 class="font-serif text-xl mb-4 text-template-roche flex items-center gap-2 font-bold">
+                    <span>💴</span> Budget
+                </h4>
+                
+                    <p class="text-sm text-gray-600 leading-relaxed mb-2"><strong>Budget vol: </strong>A partir de 229 €/pers</p>
+                
+                    <p class="text-sm text-gray-600 leading-relaxed mb-2"><strong>Budget transports: </strong>Environ 350 €/pers (location de voiture partagée ou mix transports locaux/taxis)</p>
+                
+                    <p class="text-sm text-gray-600 leading-relaxed mb-2"><strong>Budget repas: </strong>Environ 490 €/pers (35 €/jour pour des repas variés en restaurants de gamme moyenne)</p>
+                
+                    <p class="text-sm text-gray-600 leading-relaxed mb-2"><strong>Budget logement: </strong>Environ 390 €/pers (13 nuits en hôtel 3* à 60 €/chambre double)</p>
+                
+                    <p class="text-sm text-gray-600 leading-relaxed mb-2"><strong>Budget activités: </strong>Environ 180 €/pers (entrées sites, bains de soufre, dégustations de vin, cours de cuisine)</p>
+                
+            </div>
+            <div>
+                <h4 class="font-serif text-xl mb-4 text-template-roche flex items-center gap-2 font-bold">
+                    <span>☀️</span> Périodes Idéales
+                </h4>
+                
+                    <p class="text-sm text-gray-600 leading-relaxed mb-2">Printemps (Avril-Mai)</p>
+                
+                    <p class="text-sm text-gray-600 leading-relaxed mb-2">Automne (Septembre-Octobre)</p>
+                
+                    <p class="text-sm text-gray-600 leading-relaxed mb-2">Hiver (Décembre-Février)</p>
+                
+            </div>
+            <div>
+                <h4 class="font-serif text-xl mb-4 text-template-roche flex items-center gap-2 font-bold">
+                    <span>📃</span> Infos pratiques
+                </h4>
+                
+                    <p class="text-sm text-gray-600 leading-relaxed mb-2">❄️ En janvier, les températures varient de -5°C à 8°C. Prévoyez des vêtements très chauds, imperméables et des chaussures adaptées à la neige/pluie, surtout en montagne.</p>
+                
+                    <p class="text-sm text-gray-600 leading-relaxed mb-2">💳 La monnaie est le Lari Géorgien (GEL). Les cartes de crédit sont acceptées dans les grandes villes, mais prévoyez du liquide pour les petites échoppes et les zones rurales.</p>
+                
+                    <p class="text-sm text-gray-600 leading-relaxed mb-2">🛂 Les citoyens de l'UE n'ont pas besoin de visa pour un séjour de moins d'un an. Un passeport valide est suffisant pour entrer sur le territoire géorgien.</p>
+                
+                    <p class="text-sm text-gray-600 leading-relaxed mb-2">🗣️ Le géorgien est la langue officielle. Le russe est parlé par les générations plus âgées, et l'anglais est de plus en plus courant dans les zones touristiques et par la jeunesse.</p>
+                
+                    <p class="text-sm text-gray-600 leading-relaxed mb-2">📶 Une carte SIM locale (Magti, Geocell) ou une eSIM est recommandée pour rester connecté. Le Wi-Fi est disponible dans la plupart des hébergements et restaurants.</p>
+                
+                    <p class="text-sm text-gray-600 leading-relaxed mb-2">🚗 La conduite se fait à droite. Un permis de conduire international n'est pas toujours exigé mais recommandé. Les routes peuvent être difficiles en hiver, surtout en montagne, avec des risques de neige et de verglas.</p>
+                
+            </div>
+            <div>
+                <h4 class="font-serif text-xl mb-4 text-template-roche flex items-center gap-2 font-bold">
+                    <span>🔗</span> Liens Utiles
+                </h4>
+                <ul class="text-sm space-y-3">
+                  <li><a href="https://mytripplanner-dotfr.github.io/Georgie-9u28myq39wy327x/map.html" target="_blank" class="hover:text-template-ocre transition flex items-center gap-2"><strong>🗺️ Carte Interactive</strong></a></li>
+                    
+                        <li><a href="https://www.kayak.fr/flights/TRN-TBS/2026-01-15/2026-01-29" target="_blank" class="hover:text-template-ocre transition flex items-center gap-2"><strong>🛬 Réserve ton vol</strong></a></li>
+                    
+                        <li><a href="https://georgia.travel/" target="_blank" class="hover:text-template-ocre transition flex items-center gap-2"><strong>📘 Tourisme Géorgie</strong></a></li>
+                    
+                        <li><a href="https://www.accuweather.com/fr/ge/georgia-weather" target="_blank" class="hover:text-template-ocre transition flex items-center gap-2"><strong>🌤️ Météo Géorgie</strong></a></li>
+                    
+                        <li><a href="https://www.railway.ge/en/" target="_blank" class="hover:text-template-ocre transition flex items-center gap-2"><strong>🚆 Georgian Railway</strong></a></li>
+                    
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-slate-50 border-t border-slate-200 py-6">
+        <div class="max-w-4xl mx-auto px-6 text-center">
+            <p class="font-serif text-lg text-template-roche mb-2 font-bold">
+                MyTrip<span class="text-template-ocre">Planner</span>
+            </p>
+
+                <div class="flex justify-center gap-4 text-[10px] md:text-xs text-slate-500 mb-4 font-semibold">
+                    <a href="#" class="hover:text-brand-primary transition hover:underline">Mentions Légales</a>
+                    <a href="#" class="hover:text-brand-primary transition hover:underline">CGU</a>
+                    <a href="#" class="hover:text-brand-primary transition hover:underline">Confidentialité</a>
+                </div>
+
+            <p class="text-[10px] text-gray-400 mb-2">
+                &copy; 2025 MyTripPlanner. Tous droits réservés.
+            </p>
+
+            <div class="flex justify-center">
+                <p class="text-[10px] text-gray-400 uppercase tracking-widest px-2 py-0.5 border border-gray-200 rounded-full inline-block">
+                    🤖 Contenu généré par IA
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Gestion Scroll & Menu
+        const navDesktop = document.getElementById('nav-desktop');
+        const navMobile = document.getElementById('nav-mobile');
+        
+        window.addEventListener('scroll', function() {
+            if (window.scrollY > 300) {
+                navDesktop.classList.remove('-translate-y-full');
+                navMobile.classList.remove('-translate-y-full');
+            } else {
+                navDesktop.classList.add('-translate-y-full');
+                navMobile.classList.add('-translate-y-full');
+            }
+        });
+
+        // Active Link Highlighter
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const activeId = entry.target.id;
+                    document.querySelectorAll('.mobile-link').forEach(link => {
+                        const linkHref = link.getAttribute('href').substring(1);
+                        if (linkHref === activeId) {
+                            link.classList.remove('bg-gray-100', 'text-gray-700');
+                            link.classList.add('bg-template-ocre', 'text-white', 'shadow-md');
+                            link.scrollIntoView({ behavior: 'smooth', inline: 'center', block: 'nearest' });
+                        } else {
+                            link.classList.add('bg-gray-100', 'text-gray-700');
+                            link.classList.remove('bg-template-ocre', 'text-white', 'shadow-md');
+                        }
+                    });
+                }
+            });
+        }, { rootMargin: '-40% 0px -60% 0px' });
+
+        document.querySelectorAll('div[id^="jour-"], section#pratique').forEach(s => observer.observe(s));
+    </script>
+</body>
+</html>
